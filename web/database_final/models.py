@@ -3,6 +3,7 @@ from sqlalchemy import Column, ForeignKey, Integer, TIMESTAMP, Text
 from sqlalchemy.dialects.mysql import INTEGER
 from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declarative_base
+from dataclasses import dataclass
 
 Base = declarative_base()
 metadata = Base.metadata
@@ -31,7 +32,7 @@ class Vip(Base):
     id = Column(INTEGER, primary_key=True)
     points = Column(Integer, nullable=False)
 
-
+@dataclass
 class Passenger(Base):
     __tablename__ = "passenger"
 
