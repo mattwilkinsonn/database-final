@@ -9,7 +9,7 @@ services:
       MYSQL_DATABASE: train
       MYSQL_USER: mysql
       MYSQL_PASSWORD: mysql
-      MYSQL_ROOT_HOST: 0.0.0.0
+      MYSQL_ROOT_HOST: "%"
     ports:
       - 3306:3306
   adminer:
