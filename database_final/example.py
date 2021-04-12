@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from flask import Flask
+app = Flask(__name__)
 
 
 def some_function(first: int, second: int) -> int:
@@ -15,3 +17,7 @@ def some_function(first: int, second: int) -> int:
     Enjoy!
     """
     return first + second
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'

@@ -30,6 +30,7 @@ classifiers = [
 
 [tool.poetry.dependencies]
 python = "^3.6"
+flask = "^1.1.2"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.812"
@@ -49,3 +50,4 @@ sphinx-autodoc-typehints = "^1.11"
 doc8 = "^0.8"
 m2r2 = "^0.2"
 tomlkit = "^0.7"
+black = {version = "^20.8b1", allow-prereleases = true}
